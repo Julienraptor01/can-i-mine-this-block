@@ -8,7 +8,6 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.LiteralText;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.text.TextColor;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Formatting;
@@ -51,9 +50,7 @@ public class CimtbWailaPlugin implements IWailaPlugin, IBlockComponentProvider {
             tooltipTexts.add(new TranslatableText("cimtb.harvestable.symbol." + harvestable).append(new TranslatableText("cimtb.harvestable").formatted(Formatting.GRAY)));
             tooltipTexts.add(new TranslatableText("cimtb.effective_tool").formatted(Formatting.GRAY).append(handler.getToolDisplay()));
 
-            Text testFix = TranslatableText("cimtb.effective_tool.fabric.shears");
-
-            if (level == 0 && handler.getToolDisplay() != testFix || level > 1) {
+            if (level == 0 && tag.getId().getPath() != "shears" || level > 1) {
                 int[] textColor = {11184810};
                 String text = level + "";
                 if (I18n.hasTranslation("cimtb.harvest_level.level." + text)) {
