@@ -49,8 +49,10 @@ public class CimtbWailaPlugin implements IWailaPlugin, IBlockComponentProvider {
             boolean harvestable = !state.isToolRequired() || (!stack.isEmpty() && Cimtb.isEffective(stack, state));
             tooltipTexts.add(new TranslatableText("cimtb.harvestable.symbol." + harvestable).append(new TranslatableText("cimtb.harvestable").formatted(Formatting.GRAY)));
             tooltipTexts.add(new TranslatableText("cimtb.effective_tool").formatted(Formatting.GRAY).append(handler.getToolDisplay()));
+
+            Text testFix = "cimtb.effective_tool.fabric.shears";
             
-            if (level == 0 && handler.getToolDisplay() != Text "cimtb.effective_tool.fabric.shears" || level > 1) {
+            if (level == 0 && handler.getToolDisplay() != testFix || level > 1) {
                 int[] textColor = {11184810};
                 String text = level + "";
                 if (I18n.hasTranslation("cimtb.harvest_level.level." + text)) {
