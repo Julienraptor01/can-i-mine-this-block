@@ -50,7 +50,7 @@ public class CimtbWailaPlugin implements IWailaPlugin, IBlockComponentProvider {
             tooltipTexts.add(new TranslatableText("cimtb.harvestable").formatted(Formatting.GRAY).append(new TranslatableText("cimtb.harvestable.symbol." + harvestable)));
             tooltipTexts.add(new TranslatableText("cimtb.effective_tool").formatted(Formatting.GRAY).append(handler.getToolDisplay()));
 
-            if (level == 0 && handler.toolType() == "pickaxes" || level > 0) {
+            if (level >= 0 && handler.toolType() == "pickaxes") {
                 int[] textColor = {11184810};
                 String text = level + "";
                 if (I18n.hasTranslation("cimtb.harvest_level.level." + text)) {
