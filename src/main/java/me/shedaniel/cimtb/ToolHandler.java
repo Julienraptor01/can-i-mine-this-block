@@ -84,4 +84,8 @@ public final class ToolHandler {
     public Text getToolDisplay() {
         return new TranslatableText("cimtb.effective_tool." + tag.getId().getNamespace() + "." + tag.getId().getPath()).formatted(Formatting.DARK_GREEN);
     }
+
+    public String toolType() {
+        return tag.getId().getPath()
+    }
 }
