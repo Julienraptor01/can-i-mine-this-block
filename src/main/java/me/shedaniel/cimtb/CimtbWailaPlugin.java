@@ -47,7 +47,7 @@ public class CimtbWailaPlugin implements IWailaPlugin, IBlockComponentProvider {
             int level = entry.getRight();
             
             boolean harvestable = !state.isToolRequired() || (!stack.isEmpty() && Cimtb.isEffective(stack, state));
-            tooltipTexts.add(new TranslatableText("cimtb.harvestable.symbol." + harvestable).append(new TranslatableText("cimtb.harvestable").formatted(Formatting.GRAY)));
+            tooltipTexts.add(new TranslatableText("cimtb.harvestable").formatted(Formatting.GRAY).append(new TranslatableText("cimtb.harvestable.symbol." + harvestable)));
             tooltipTexts.add(new TranslatableText("cimtb.effective_tool").formatted(Formatting.GRAY).append(handler.getToolDisplay()));
 
             if (level == 0 && handler.toolType() != "shears" || level > 0) {
