@@ -86,6 +86,6 @@ public final class ToolHandler {
     }
 
     public String toolType() {
-        return tag.getId().getPath()
+        return tag.getId().getPath();
     }
 }
