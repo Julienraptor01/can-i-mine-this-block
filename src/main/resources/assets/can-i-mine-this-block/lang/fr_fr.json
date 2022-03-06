@@ -1,8 +1,8 @@
 {
   "cimtb.effective_tool": "Outil efficace : ",
   "cimtb.harvest_level": "Niveau de récolte : ",
-  "cimtb.harvestable.symbol.false": "§4\u2718",
-  "cimtb.harvestable.symbol.true": "§2\u2714",
+  "cimtb.harvestable.symbol.false": " §4\u2718",
+  "cimtb.harvestable.symbol.true": " §2\u2714",
   "cimtb.harvestable": "Récoltable :",
   
   "cimtb.harvest_level.level.format": "%s (%s)",
