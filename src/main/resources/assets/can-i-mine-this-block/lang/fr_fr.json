@@ -12,10 +12,10 @@
   "cimtb.harvest_level.level.3": "§bDiamant",
   "cimtb.harvest_level.level.4": "§0Netherite",
 
-  "cimtb.effective_tool.fabric.axes": "Hache",
-  "cimtb.effective_tool.fabric.hoes": "Houe",
-  "cimtb.effective_tool.fabric.pickaxes": "Pioche",
-  "cimtb.effective_tool.fabric.shears": "Cisailles",
-  "cimtb.effective_tool.fabric.shovels": "Pelle",
-  "cimtb.effective_tool.fabric.swords": "Épée"
+  "cimtb.effective_tool.minecraft.mineable.axe": "Hache",
+  "cimtb.effective_tool.minecraft.mineable.hoe": "Houe",
+  "cimtb.effective_tool.minecraft.mineable.pickaxe": "Pioche",
+  "cimtb.effective_tool.fabric.mineable.shears": "Cisailles",
+  "cimtb.effective_tool.minecraft.mineable.shovel": "Pelle",
+  "cimtb.effective_tool.fabric.mineable.sword": "Épée"
 }
