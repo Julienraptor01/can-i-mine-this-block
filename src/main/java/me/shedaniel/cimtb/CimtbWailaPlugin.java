@@ -46,7 +46,7 @@ public class CimtbWailaPlugin implements IWailaPlugin, IBlockComponentProvider {
             int level = entry.getRight();
             
             boolean harvestable = !state.requiresCorrectToolForDrops() || (!stack.isEmpty() && Cimtb.isEffective(stack, state));
-            tooltipTexts.addLine(new TranslatableComponent("cimtb.harvestable.symbol." + harvestable).append(new TranslatableComponent("cimtb.harvestable").withStyle(ChatFormatting.GRAY)));
+            tooltipTexts.addLine(new TranslatableComponent("cimtb.harvestable").withStyle(ChatFormatting.GRAY)).append(new TranslatableComponent("cimtb.harvestable.symbol." + harvestable));
             tooltipTexts.addLine(new TranslatableComponent("cimtb.effective_tool").withStyle(ChatFormatting.GRAY).append(handler.getToolDisplay()));
 
             if (level >= 0 && handler.toolType() == "pickaxes") {
