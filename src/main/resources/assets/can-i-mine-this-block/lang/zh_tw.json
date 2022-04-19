@@ -1,9 +1,9 @@
 {
   "cimtb.effective_tool": "合適工具: ",
   "cimtb.harvest_level": "開採等級: ",
-  "cimtb.harvestable.symbol.false": "§4\u2718",
-  "cimtb.harvestable.symbol.true": "§2\u2714",
-  "cimtb.harvestable": " 當前能否開採",
+  "cimtb.harvestable.symbol.false": " §4\u2718",
+  "cimtb.harvestable.symbol.true": " §2\u2714",
+  "cimtb.harvestable": "當前能否開採",
 
   "cimtb.harvest_level.level.format": "%s (%s)",
   "cimtb.harvest_level.level.0": "§7石頭",

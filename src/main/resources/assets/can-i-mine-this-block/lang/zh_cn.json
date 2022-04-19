@@ -1,9 +1,9 @@
 {
   "cimtb.effective_tool": "合适工具: ",
   "cimtb.harvest_level": "开采等级: ",
-  "cimtb.harvestable.symbol.false": "§4\u2718",
-  "cimtb.harvestable.symbol.true": "§2\u2714",
-  "cimtb.harvestable": " 当前能否开采",
+  "cimtb.harvestable.symbol.false": " §4\u2718",
+  "cimtb.harvestable.symbol.true": " §2\u2714",
+  "cimtb.harvestable": "当前能否开采",
 
   "cimtb.harvest_level.level.format": "%s (%s)",
   "cimtb.harvest_level.level.0": "§7石头",
