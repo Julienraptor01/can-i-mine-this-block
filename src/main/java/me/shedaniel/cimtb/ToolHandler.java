@@ -80,6 +80,6 @@ public final class ToolHandler {
     }
 
     public String toolType() {
-        return tag.location().getPath().replace('/', '.');
+        return tag.location().getPath();
     }
 }
