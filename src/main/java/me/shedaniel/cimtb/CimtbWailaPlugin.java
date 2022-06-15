@@ -48,7 +48,7 @@ public class CimtbWailaPlugin implements IWailaPlugin, IBlockComponentProvider {
             tooltipTexts.addLine(Component.translatable("cimtb.harvestable").withStyle(ChatFormatting.GRAY).append(Component.translatable("cimtb.harvestable.symbol." + harvestable)));
             tooltipTexts.addLine(Component.translatable("cimtb.effective_tool").withStyle(ChatFormatting.GRAY).append(handler.getToolDisplay()));
 
-            if (level >= 0 && handler.toolType() == "mineable/pickaxe") {
+            if (level >= 0 && handler.toolType() != "mineable/shears" || level > 1) {
                 int[] textColor = {11184810};
                 String text = level + "";
                 if (I18n.exists("cimtb.harvest_level.level." + text)) {
