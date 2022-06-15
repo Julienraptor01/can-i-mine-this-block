@@ -5,7 +5,6 @@ import com.google.common.collect.Lists;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.Registry;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
@@ -76,7 +75,7 @@ public final class ToolHandler {
     }
     
     public Component getToolDisplay() {
-        return new TranslatableComponent("cimtb.effective_tool." + tag.location().getNamespace() + "." + tag.location().getPath().replace('/', '.')).withStyle(ChatFormatting.DARK_GREEN);
+        return Component.translatable("cimtb.effective_tool." + tag.location().getNamespace() + "." + tag.location().getPath().replace('/', '.')).withStyle(ChatFormatting.DARK_GREEN);
     }
 
     public String toolType() {
